@@ -1,5 +1,5 @@
-$color-hydrogen: #0082DE;
-$color-phosphorous: #f4fd98;
+$themeColor: #FFE79F;
+$themeBgColor: #222;
 
 ::selection {
   background-color: $color-phosphorous;

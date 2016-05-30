@@ -1,4 +1,7 @@
-var canvas = document.getElementById('Canvas');
-var context = canvas.getContext('2d');
-context.fillStyle = '#c00';
-context.fillRect(10, 10, 200, 100);
+var canvas = document.getElementById('Canvas'),
+    context = canvas.getContext('2d'),
+    windowWidth = window.outerWidth,
+    windowHeight = window.outerHeight;
+
+context.fillStyle = '#444';
+context.fillRect(0, 0, windowWidth, windowHeight);

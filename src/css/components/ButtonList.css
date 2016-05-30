@@ -1,0 +1,30 @@
+ButtonList-inner{
+  flex: 2;
+}
+
+.ButtonList {
+  lost-flex-container: column;
+  font-weight: 600;
+
+  .Button {
+    padding: $scale-xsm $scale-sm;
+    margin-bottom: -3px;
+    border-radius: 0 0 0 0;
+    background-color: $themeBgColor;
+    font-size: responsive 1rem 1.6rem;
+    color: $themeColor;
+
+    &:hover {
+      background-color: color($themeColor a(10%));
+    }
+  }
+
+  & > :first-child {
+    border-radius: 4px 4px 0 0;
+  }
+
+  & > :last-child {
+    border-radius: 0 0 4px 4px;
+  }
+
+}
