@@ -44,8 +44,8 @@ function setupCircles() {
         var randomX = Math.round(-200 + Math.random() * 700);
         var randomY = Math.round(-200 + Math.random() * 700);
         var speed = 0.2 + Math.random() * 3;
-        var size = 1 + Math.random() * 30;
-        var radius = 1 + Math.random() * 2;
+        var size = 1 + Math.random() * 50;
+        var radius = 1 + Math.random() * 3;
 
         var circle = new Circle(radius, speed, size, randomX, randomY);
         circles.push(circle);

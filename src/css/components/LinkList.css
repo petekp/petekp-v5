@@ -1,18 +1,22 @@
-ButtonList-inner{
+LinkList-inner{
   flex: 2;
 }
 
-.ButtonList {
+.LinkList {
   lost-flex-container: column;
   font-weight: 600;
+  text-transform: uppercase;
 
-  .Button {
+  a {
     padding: $scale-xsm $scale-sm;
-    margin-bottom: -3px;
+    margin-bottom: -$border-thickness;;
     border-radius: 0 0 0 0;
     background: transparent;
     font-size: responsive 1rem 1.6rem;
+    flex: 1;
     color: $themeColor;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 $border-thickness $themeColor;
 
     &:hover {
       background-color: color($themeColor a(10%));
@@ -20,11 +24,11 @@ ButtonList-inner{
   }
 
   & > :first-child {
-    border-radius: 4px 4px 0 0;
+    border-radius: $buttonRadius $buttonRadius 0 0;
   }
 
   & > :last-child {
-    border-radius: 0 0 4px 4px;
+    border-radius: 0 0 $buttonRadius $buttonRadius;
   }
 
 }

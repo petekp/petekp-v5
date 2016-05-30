@@ -19,7 +19,7 @@ $scale-xxlg: ms(8)rem;
 $scale-xxxlg: ms(9)rem;
 $scale-massive: ms(12)rem;
 
-$border-thickness: 3px;
+$border-thickness: 0.2rem;
 
 
 /* Lost Grid settings */
@@ -63,7 +63,6 @@ a {
 
 main[role=main] {
   margin: 0;
-  height: 100%;
 
   section{
     position: relative;

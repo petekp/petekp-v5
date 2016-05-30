@@ -10,6 +10,9 @@
 /* Less than 480px tall */
 @custom-media --short (max-height: 30.000em);
 
+/* Landscape Orientation */
+@custom-media --landscape (orientation: landscape);
+
 
 /******* iPhones *******/
 

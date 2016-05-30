@@ -16,9 +16,19 @@
   align-items: center;
   justify-content: center;
 }
+.u-flex-aligner-left-spaced{
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+}
+.u-flex-aligner-right-spaced{
+  display: flex;
+  align-items: right;
+  justify-content: space-around;
+}
 .u-flex-aligner-end{
   display: flex;
-  align-items: flex-end;;
+  align-items: flex-end;
   justify-content: flex-end;
 }
 

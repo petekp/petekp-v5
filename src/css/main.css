@@ -17,9 +17,9 @@
 /*@import 'components/Block';*/
 /*@import 'components/Logo';*/
 @import 'components/Button';
-@import 'components/ButtonList';
+@import 'components/LinkList';
 /*@import 'components/MenuButton';*/
 /*@import 'components/Footer';*/
 
 /* Page-specific */
-@import 'pages/landing';
+@import 'pages/front';

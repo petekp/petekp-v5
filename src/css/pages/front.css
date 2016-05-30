@@ -1,0 +1,59 @@
+.wrapper--front {
+  lost-flex-container: column;
+  height: 87vh;
+  color: $themeColor;
+  padding: 4vw 5vw;
+
+  @media (--small) {
+    height: 100vh;
+    lost-flex-container: row;
+  }
+
+  .LinkList-outer {
+    @extend .u-flex-aligner-end;
+    justify-content: space-around;
+  }
+
+  .LinkList {
+    flex: 1;
+
+    @media (--small) {
+      min-width: 15rem;
+      max-width: 24rem;
+    }
+  }
+
+  @media (--landscape) {
+    lost-flex-container: row;
+  }
+}
+
+.header--front {
+  @extend .u-flex-aligner-start;
+  lost-flex-container: column;
+  flex: 1;
+
+  @media (--landscape) {
+    @extend .u-flex-aligner-left-spaced;
+  }
+}
+
+h1 {
+  line-height: 1;
+  font-weight: 800;
+  margin-left: -0.4rem;
+  margin-bottom: 3vh;
+  font-size: responsive 5.4rem 7.8rem;
+
+  @media (--landscape) {
+    font-size: responsive 3.4rem 7.8rem;
+  }
+}
+
+h2 {
+  position: relative;
+  font-weight: 500;
+  letter-spacing: 0.3vh;
+  font-size: responsive 1.6rem 2.2rem;
+  margin-bottom: 0;
+}
