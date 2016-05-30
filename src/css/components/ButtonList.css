@@ -10,7 +10,7 @@ ButtonList-inner{
     padding: $scale-xsm $scale-sm;
     margin-bottom: -3px;
     border-radius: 0 0 0 0;
-    background-color: $themeBgColor;
+    background: transparent;
     font-size: responsive 1rem 1.6rem;
     color: $themeColor;
 
