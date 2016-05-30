@@ -1,0 +1,40 @@
+.Footer{
+  min-height: 20vh;
+  padding: $scale-xlg 0;
+  text-align: center;
+  border-top: 1px solid #eee;
+
+  .Logo{
+    width: 4rem;
+    height: 6rem;
+    background-position: 50% 7%;
+    background-size: 98%;
+    opacity: .2;
+    margin: 0 0 $scale-sm 0;
+  }
+  li{
+    display: inline-block;
+    margin: 0 .5rem;
+  }
+  a{
+    text-transform: uppercase;
+    color: #aaa;
+    font-size: $scale-xxsm;
+    text-decoration: none;
+    margin: 0 $scale-xxsm;
+    padding: $scale-xsm $scale-smm;
+    border-radius: 40px;
+    width: 50%;
+    border: 1px solid #ddd;
+    transition: all 0.2s $defaultTransitionTiming;
+
+    &:hover{
+      color: #888;
+      border-color: #aaa;
+    }
+
+    &:active{
+      background: rgba(0,0,0,0.03);
+    }
+  }
+}

@@ -1,0 +1,90 @@
+.Button{
+  position: relative;
+  display: inline-block;
+  padding: $scale-sm $scale-lg;
+  border: none;
+  font-size: $scale-sm;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .034rem;
+  line-height: 1;
+  color: rgba($color-carbon, 0.87);
+  background: transparent;
+  z-index: 2;
+
+  &:after, &:before{
+    content: '';
+    position: absolute 0 0 0 0;
+    border-radius: 4rem;
+    transition: all 0.3s $defaultTransitionTiming;
+  }
+
+  &:after{
+    z-index: -1;
+  }
+  &:before{
+    z-index: -2;
+  }
+}
+
+.Button--floating{
+
+  /* button background */
+  &:after{
+    @mixin bg-gradient 180deg, rgba(#fff, .8), rgba(#fff, 0.86);
+
+    opacity: 0.86;
+
+  }
+  /* button shadow */
+  &:before{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 5px 8px rgba(0,0,0,0.15);
+
+  }
+  &:hover{
+    &:after, &:before{
+      transform: scale(1.07);
+    }
+    &:after{
+      opacity: 1;
+    }
+    &:before{
+      box-shadow: 0 5px 23px rgba(0,0,0,0.18), 0 7px 30px rgba(0,0,0,0.08);
+    }
+    &:active{
+      &:after, &:before{
+        transform: scale(1);
+        transition: all 0.067s ease-out;
+      }
+      &:before{
+        box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 5px 8px rgba(0,0,0,0.15);
+      }
+    }
+  }
+}
+
+.Button--wide{
+  padding: $scale-sm $scale-xlg;
+  font-size: $scale-sm;
+
+  @media (--iPhone4) {
+    padding: 0.8rem $scale-xlg;
+    font-size: 1rem;
+  }
+}
+
+.Button--primary{
+  color: #fff;
+
+  &:after{
+    background: color($color-hydrogen s(100%) b(30%));
+  }
+
+  &:hover{
+    &:after{
+      background: color($color-hydrogen s(100%) b(20%));
+    }
+
+  }
+}

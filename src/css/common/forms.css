@@ -1,0 +1,63 @@
+form{
+  lost-center: 30rem;
+  font-size: $scale-sm;
+
+  p{
+    lost-column: 12/12;
+    margin-bottom: $scale-sm;
+
+    @media (--medium){
+      margin-bottom: $scale-md;
+    }
+  }
+
+  .Button{
+    margin: 0 auto;
+    margin-top: $scale-sm;
+  }
+}
+label{
+  font-size: ms(0)rem;
+  display: block;
+  margin-bottom: 0;
+  color: #888;
+
+  span{
+    display: inline-block;
+    margin-left: $scale-xxxsm;
+    font-size: $scale-xxsm;
+    font-weight: 300;
+    opacity: 0.6;
+    text-transform: uppercase;
+  }
+}
+input, input[type=text], textarea{
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  font-weight: 400;
+  color: #444;
+  border: 1px solid $color-faint-gray;
+  border-radius: .3rem;
+  appearance: none;
+}
+
+select{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 3rem;
+  color: #444;
+  padding: 0.8rem;
+  border-radius: .3rem;
+  background-color: #fff;
+}
+
+select:before{
+  content: '▼';
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  position: absolute $scale-sm $scale-sm;
+}

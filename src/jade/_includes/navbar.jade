@@ -1,0 +1,27 @@
+.Navbar
+  .Navbar-logo-container
+    a.Logo.Logo--narrow-width.Logo--light(href="/")
+    a.Logo.Logo--narrow-width.Logo--dark(href="/")
+  .Navbar-toggle-menu.no-smoothState
+    .MenuButton.MenuButton--squeeze(aria-label="menu")
+      .MenuButton-box
+        .MenuButton-inner
+      div.MenuButton-label
+        span MENU
+
+  .Navbar-menu.is-hidden(aria-hidden="true", role="menu")
+    a.Navbar-menu-item(href="/") #[span Home]
+    a.Navbar-menu-item(href="/reading") #[span Reading]
+    a.Navbar-menu-item(href="/treasury") #[span Treasury]
+
+  nav.Navbar-menu--md(role="menubar")
+    .Navbar-logo-container
+      a.Logo.Logo--medium-width.Logo--light(href="/")
+      a.Logo.Logo--medium-width.Logo--dark(href="/")
+    ul.Navbar-menu-item--md-container(role="menu")
+      li.Navbar-menu-item--md
+        a(href="/") Home
+      li.Navbar-menu-item--md
+        a(href="/reading") Reading
+      li.Navbar-menu-item--md
+        a(href="/treasury") Treasury

@@ -1,0 +1,12 @@
+extends ./layout.jade
+
+block vars
+	- var pageName = 'error';
+	- var headerClasses = 'Header--full Header--error';
+
+block header
+	.bg-image.b-lazy.spin(data-src="/static/img/backgrounds/bg-#{pageName}.jpg")
+	.wrapper.wrapper--wide.u-text-align-center
+		h1.Header-copy 404
+		h2 Page not found
+		a.Button.Button--wide.Button--floating.Button--Header(href="/") RETURN HOME

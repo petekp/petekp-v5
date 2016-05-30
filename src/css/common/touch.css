@@ -1,0 +1,9 @@
+/* disable iOS Safari link tap highlight */
+a, button, input {
+    -webkit-tap-highlight-color: transparent;
+}
+/* disable any touch or hover indication */
+@define-extend no-touch{
+  touch-callout: none;
+  user-select: none;
+}

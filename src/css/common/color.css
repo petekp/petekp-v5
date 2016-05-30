@@ -1,0 +1,11 @@
+$color-hydrogen: #0082DE;
+$color-phosphorous: #f4fd98;
+
+::selection {
+  background-color: $color-phosphorous;
+  text-shadow: none;
+}
+
+@define-mixin bg-gradient $deg, $color1, $color2 {
+    background-image: linear-gradient($deg, $color1 0%, $color2 70%);
+}

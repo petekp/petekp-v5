@@ -1,0 +1,72 @@
+/* Utility Classes */
+
+.u-mb0{
+  margin: 0 !important;
+}
+.u-text-align-center{
+  text-align: center;
+}
+.u-flex-aligner-start{
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.u-flex-aligner-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.u-flex-aligner-end{
+  display: flex;
+  align-items: flex-end;;
+  justify-content: flex-end;
+}
+
+.u-line-break{
+  display: none;
+
+  @media (--average) {
+    display: block;
+  }
+}
+
+@define-mixin media-query-banner {
+
+  &:after{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 3rem;
+    content: 'Narrow';
+    text-align: center;
+    color: #fff;
+    font-size: $scale-sm;
+    width: 100%;
+    background: red;
+    line-height: 3rem;
+    transition: all 0.2s ease;
+    z-index: 999;
+
+    @media (--small) {
+      content: 'Small';
+      background: teal;
+    }
+    @media (--medium) {
+      content: 'Medium';
+      background: purple;
+    }
+    @media (--average) {
+      content: 'Average';
+      background: green;
+    }
+    @media (--large) {
+      content: 'Large';
+      background: black;
+    }
+    @media (--x-large) {
+      content: 'X Large';
+      background: brown;
+    }
+
+  }
+}

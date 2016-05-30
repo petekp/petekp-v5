@@ -1,0 +1,33 @@
+/******* Viewport Width  *******/
+
+@custom-media --narrow (max-width: 30em);
+@custom-media --small (min-width: 40.063em);
+@custom-media --medium (min-width: 50.063em);
+@custom-media --average (min-width: 83.500em);
+@custom-media --large (min-width: 90.063em);
+@custom-media --x-large (min-width: 120.063em);
+
+/* Less than 480px tall */
+@custom-media --short (max-height: 30.000em);
+
+
+/******* iPhones *******/
+
+/* iPhone 4 */
+@custom-media --iPhone4 (min-device-width: 320px) and (max-device-width: 480px) and (device-aspect-ratio: 2/3);
+
+/* iPhone 5 */
+@custom-media --iPhone5 (min-device-width: 320px) and (max-device-width: 568px)  and (device-aspect-ratio: 40/71);
+
+/* iPhone 6 */
+@custom-media --iPhone6 (min-device-width: 375px) and (max-device-width: 667px);
+@custom-media --iPhone6--landscape (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape);
+
+/* iPhone 6+ */
+@custom-media --iPhone6Plus (min-device-width: 414px) and (max-device-width: 736px);
+
+
+/******* Tablets *******/
+
+/* iPad */
+@custom-media --iPad (min-device-width: 768px) and (max-device-width: 1024px);

@@ -1,0 +1,24 @@
+/* Home-Specific Blocks */
+
+.home-01{
+  @media (--narrow) {
+    p{
+      text-align: left !important;
+    }
+  }
+}
+.home-02{
+  @mixin bg-gradient 160deg, #FF2A34, #F12039;
+  color: #fff;
+}
+.home-03{
+  @mixin bg-gradient 135deg, #2C08E1, #00DEBF;
+  color: #fff;
+}
+.home-04{
+  background-color: #eee;
+}
+.home-05{
+  @mixin bg-gradient 135deg, $color-carbon, color($color-carbon shade(30%));
+  color: #fff;
+}

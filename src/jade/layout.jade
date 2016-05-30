@@ -1,0 +1,22 @@
+//- Global vars
+- var jsVersion = '20160521';
+- var cssVersion = '20160521';
+- var pageName = '';
+- var headerClasses = '';
+
+//- Local vars
+block vars
+
+//- Layout Template
+include ./_includes/head.jade
+
+canvas#Canvas
+
+#page.m-scene
+	//- include ./_includes/navbar.jade
+
+	main(role='main').scene-el.scene-el--fadein
+		block main_content
+
+//- include ./_includes/footer.jade
+include ./_includes/scripts.jade

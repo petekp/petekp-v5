@@ -1,0 +1,13 @@
+extends ./layout.jade
+
+block vars
+  - var headerClasses = ' Header--landing';
+
+block main_content
+  .wrapper--landing
+    header.header--landing.u-flex-aligner-start
+      h1 Pete K. <br />Petrash
+      h2 Design engineer at #[a.btn(href="http://virtahealth.com") Virta]
+    section.btn-list-container.u-flex-aligner-end
+      .btn-list
+        #[a.btn(href="http://twitter.com/petepetrash") Twitter] #[a.btn(href="https://www.quora.com/profile/Pete-Petrash") Quora] #[a.btn(href="mailto:pete@petekp.com") Email]

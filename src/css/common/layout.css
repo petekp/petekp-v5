@@ -1,0 +1,154 @@
+
+/* Modular Scale settings */
+:root {
+  --ms-bases: 1.250, 1;
+  --ms-ratios: 1.618;
+}
+
+/* Modular Scale units for harmonious type, margins, and padding */
+$scale-xxxsm: ms(-3)rem;
+$scale-xxsm: ms(-2)rem;
+$scale-xsm: ms(-1)rem;
+$scale-sm: ms(1)rem;
+$scale-smm: ms(2)rem;
+$scale-md: ms(3)rem;
+$scale-lg: ms(5)rem;
+$scale-llg: ms(6)rem;
+$scale-xlg: ms(7)rem;
+$scale-xxlg: ms(8)rem;
+$scale-xxxlg: ms(9)rem;
+$scale-massive: ms(12)rem;
+
+$border-thickness: 2px;
+$themeColor: #a7880a;
+
+/* Lost Grid settings */
+@lost flexbox flex;
+@lost gutter 1.125rem;
+
+/* Typography */
+@define-extend serif {
+    font-family: Georgia, serif;
+}
+@define-extend sans-serif {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  /*lost-utility: edit;*/
+}
+
+html, body {
+  min-width: 320px;
+  height: 100%;
+}
+
+body {
+  @extend sans-serif;
+  /*@mixin media-query-banner;*/
+}
+
+a {
+  position: relative;
+  transition: all 0.12s $defaultTransitionTiming;
+  color: $themeColor;
+  z-index: 2;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: $scale-xsm $scale-sm;
+  font-size: responsive 1.3rem 2rem;
+  text-decoration: none;
+  border-radius: 4px;
+  letter-spacing: 0.13rem;
+  box-shadow: inset 0 0 0 $border-thickness $themeColor;
+  background: white;
+
+  &:hover {
+    background: color($themeColor l(90%) s(60%));
+
+    &:after {
+      opacity: 1;
+    }
+  }
+}
+
+#page {
+  position: relative;
+  color: $themeColor;
+}
+
+main[role=main] {
+  margin: 0;
+  height: 100%;
+
+  section{
+    position: relative;
+  }
+}
+
+.wrapper--landing {
+  padding: $scale-md $scale-sm;
+  height: calc(100vh - 54px);
+  lost-flex-container: column;
+
+  @media (--average) {
+    lost-flex-container: row;
+  }
+}
+
+.header--landing {
+  lost-flex-container: column;
+  flex: 2;
+}
+
+h1 {
+  font-size: responsive 4rem 7.8rem;
+  line-height: 1;
+  font-weight: 800;
+  margin-left: -0.4rem;
+}
+
+h2 {
+  position: relative;
+  font-size: responsive 1.2rem 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.3vh;
+
+  @media (--medium) {
+    font-weight: 600;
+    letter-spacing: 0.3vh;
+  }
+}
+
+.btn-list-container {
+  flex: 2;
+}
+.btn-list {
+  lost-flex-container: column;
+  font-weight: 600;
+  width: 100%;
+
+  .btn {
+    padding: $scale-xsm $scale-sm;
+    margin-bottom: -3px;
+    border-radius: 0 0 0 0;
+  }
+
+  & > :first-child {
+    border-radius: 4px 4px 0 0;
+  }
+
+  & > :last-child {
+    border-radius: 0 0 4px 4px;
+  }
+
+  @media (--small) {
+    max-width: 20rem;
+  }
+}
