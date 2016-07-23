@@ -19,9 +19,6 @@ $scale-xxlg: ms(8)rem;
 $scale-xxxlg: ms(9)rem;
 $scale-massive: ms(12)rem;
 
-$border-thickness: 0.2rem;
-
-
 /* Lost Grid settings */
 @lost flexbox flex;
 @lost gutter 1.125rem;
@@ -37,8 +34,9 @@ $border-thickness: 0.2rem;
 html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  /*lost-utility: edit;*/
   background-color: $themeBgColor;
+  /*lost-utility: edit;*/
+  /*@mixin media-query-banner;*/
 }
 
 html, body {
@@ -54,6 +52,7 @@ body {
 a {
   position: relative;
   transition: all 0.12s $defaultTransitionTiming;
+  letter-spacing: 0.3vw;
   z-index: 2;
 }
 

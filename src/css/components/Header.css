@@ -18,7 +18,7 @@
   }
 }
 
-.Header--front {
+.header {
   & > div {
     /*margin-top: 14vh;*/
   }

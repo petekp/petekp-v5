@@ -1,13 +1,13 @@
 extends ./layout.jade
 
 block vars
-  - var headerClasses = ' Header--front';
+  - var headerClasses = ' header';
 
 block main_content
-  .wrapper--front
-    header.header--front
+  .wrapper
+    header.header
       h1 Pete K. <br />Petrash
       h2 Designer at #[a.Button(href="http://virtahealth.com") Virta]
-    section.LinkList-outer
+    section.links
       .LinkList
         #[a(href="http://twitter.com/petepetrash") Twitter] #[a(href="https://www.quora.com/profile/Pete-Petrash") Quora] #[a(href="mailto:pete@petekp.com") Email]

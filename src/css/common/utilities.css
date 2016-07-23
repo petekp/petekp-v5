@@ -1,8 +1,4 @@
 /* Utility Classes */
-
-.u-mb0{
-  margin: 0 !important;
-}
 .u-text-align-center{
   text-align: center;
 }
@@ -16,15 +12,12 @@
   align-items: center;
   justify-content: center;
 }
-.u-flex-aligner-left-spaced{
+.u-flex-aligner-left{
   display: flex;
   align-items: left;
-  justify-content: space-between;
 }
-.u-flex-aligner-right-spaced{
-  display: flex;
-  align-items: right;
-  justify-content: space-around;
+.u-justify-space-between {
+  justify-content: space-between;
 }
 .u-flex-aligner-end{
   display: flex;
@@ -32,17 +25,9 @@
   justify-content: flex-end;
 }
 
-.u-line-break{
-  display: none;
-
-  @media (--average) {
-    display: block;
-  }
-}
-
 @define-mixin media-query-banner {
-
   &:after{
+    mix-blend-mode: screen;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -65,8 +50,8 @@
       content: 'Medium';
       background: purple;
     }
-    @media (--average) {
-      content: 'Average';
+    @media (--landscape) {
+      content: 'Landscape';
       background: green;
     }
     @media (--large) {

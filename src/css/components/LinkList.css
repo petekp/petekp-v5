@@ -1,5 +1,7 @@
-LinkList-inner{
-  flex: 2;
+$border-thickness: 0.2rem;
+
+.LinkList-inner{
+  flex: 1;
 }
 
 .LinkList {
