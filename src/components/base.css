@@ -1,0 +1,10 @@
+@custom-media --narrow (max-width: 42em);
+@custom-media --medium (min-width: 42em);
+@custom-media --large (min-width: 56.063em);
+@custom-media --x-large (min-width: 80.063em);
+@custom-media --landscape (orientation: landscape) and (min-width: 30rem) and (max-height: 30rem);
+@custom-media --short (orientation: portrait) and (max-height: 30rem);
+
+:root {
+  --themeColor: #FFE79F;
+}

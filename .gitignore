@@ -1,26 +1,4 @@
-### OSX ###
-.DS_Store
-Icon
-._*
-
-### Node ###
-logs
-*.log
-npm-debug.log*
-
-# node-waf configuration
-.lock-wscript
-
-# Build
-dist
-
-# Dependency directory
 node_modules
-
-# Optional npm cache directory
-.npm
-
-# Python
-*.pyc
-
+.DS_Store
+build
 .ftpconfig
