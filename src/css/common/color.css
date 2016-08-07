@@ -2,7 +2,6 @@ $themeColor: #FFE79F;
 $themeBgColor: #222;
 
 ::selection {
-  background-color: $color-phosphorous;
   text-shadow: none;
 }
 

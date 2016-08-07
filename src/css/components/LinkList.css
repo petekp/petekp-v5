@@ -1,9 +1,5 @@
 $border-thickness: 0.2rem;
 
-.LinkList-inner{
-  flex: 1;
-}
-
 .LinkList {
   lost-flex-container: column;
   font-weight: 600;
